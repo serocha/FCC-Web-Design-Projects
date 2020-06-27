@@ -1,4 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <!-- Plain CSS for practice rather than stylesheet. -->
 <style>
@@ -46,7 +47,8 @@
     margin-right: auto;
     margin-top: 50px;
     border-radius: 2%;
-    height: 540px;
+    max-width: 100%;
+    height: auto;
     width: 720px;
   }
  
