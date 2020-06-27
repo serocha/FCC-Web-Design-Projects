@@ -1,0 +1,211 @@
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">
+
+<!-- Plain CSS for practice rather than stylesheet. -->
+<style>
+  body {
+  font-family: 'Noto Sans';
+  background: #F1E9E7;
+  color: #2F2D2C ;
+  }
+  
+  h1 {
+    text-align: center;
+    background-color: #e6dedc;
+    margin: 5px;
+    border-radius: 2%;
+    box-shadow: -3px 3px 5px 4px rgba(0,0,0,0.1);
+    height: 60px;
+  }
+
+  #quoteDisplay {
+    font-style: italic;
+    text-align: center;
+    width: 50%;
+    height: 40px;
+    padding-left: 25%;
+    opacity: 1;
+    animation-name: fade;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes fade {
+    0% {opacity:0;}
+    10% {opacity:1;}
+  }
+  
+  img {
+    box-shadow: -5px 5px 5px 4px rgba(0,0,0,0.25)
+  }
+  
+   /* The image classes can be simplified into a pseudo-class that inherits but changes resolution for each. 
+      However, for this project I am required to have a specific name so I found this easier. */
+  #image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 2%;
+    height: 540px;
+    width: 720px;
+  }
+ 
+  #image2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 2%;
+    height: 540px;
+    width: 720px;
+  }
+  
+  #image3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 2%;
+    height: 400px;
+    width: 720px;
+  }
+  
+  #image4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 2%;
+    height: 454px;
+    width: 840px;
+  }
+  
+  #image5 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 2%;
+    height: 1055px;
+    width: 800px;
+  }
+  
+  #img-div {
+    background-color: #e6dedc;
+    border-radius: 2%;
+    margin: 5px;
+    box-shadow: -3px 3px 5px 4px rgba(0,0,0,0.1)
+  }
+  
+  #img-caption {
+    text-align: center;
+    z-index: 2;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    border-radius: 2%;
+    font-size: 14px;
+    background-color: #F1E9E7;
+    width: 35%;
+    box-shadow: -3px 3px 4px 3px rgba(0,0,0,0.2)
+  }
+
+  #tribute-info {
+    text-align: left;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+  }
+</style>
+
+<!-- Webpage -->
+<main id="main">
+
+<!-- Title & brief description -->
+<header id="title">
+  <h1>Anthony Bourdain</h1><br>
+  <div id="quoteDisplay">
+    <!-- Display quotes here. -->
+  </div>
+  
+  <!-- JS script that takes an array of quotes and randomly fades them in underneath the title. -->
+    <script>
+      var quotes = [
+        "<q>“Travel is about the gorgeous feeling of teetering in the unknown.”</q>",
+        "<q>Travel changes you. As you move through this life and this world you change things slightly, you leave marks behind, however small. And in return, life—and travel—leaves marks on you.</q>",
+        "<q>...your body is not a temple, it's an amusement park. Enjoy the ride.</q>",
+        "<q>No one understands and appreciates the American Dream of hard work leading to material rewards better than a non-American.</q>",
+        "<q>Maybe that’s enlightenment enough: to know that there is no final resting place of the mind; no moment of smug clarity. Perhaps wisdom...is realizing how small I am, and unwise, and how far I have yet to         go.</q>",
+        "<q>Open your mind, get up off the couch, move.</q>",
+        "<q>Travel isn’t always pretty. It isn’t always comfortable. Sometimes it hurts, it even breaks your heart. But that’s okay. The journey changes you; it should change you. It leaves marks on your memory, on            your consciousness, on your heart, and on your body. You take something with you. Hopefully, you leave something good behind.</q>",
+        "<q>To me, life without veal stock, pork fat, sausage, organ meat, demi-glace, or even stinky cheese is a life not worth living.</q>",
+        "<q>Skills can be taught. Character you either have or you don't have.</q>",
+        "<q>Don't lie about it. You made a mistake. Admit it and move on. Just don't do it again.</q>",
+        "<q>The journey is part of the experience - an expression of the seriousness of one's intent. One doesn't take the A train to Mecca.",
+        "<q>I've long believed that good food, good eating, is all about risk. Whether we're talking about unpasteurized Stilton, raw oysters or working for organized crime 'associates,' food, for me, has always been          an adventure...</q>",
+        "<q>You have to be a romantic to invest yourself, your money, and your time in cheese.</q>"
+      ];
+
+      function newQuote() {    
+        document.getElementById('quoteDisplay').innerHTML = quotes[Math.floor(Math.random()*(quotes.length))];
+      };
+
+      var quoteGen = newQuote();
+      var timerId = setInterval('newQuote()', 15015);
+
+    </script>
+  </header>
+  
+  <!-- First image -->
+  <div id='img-div'>
+    <img id='image' src="https://images.prismic.io/insidersproject/39a61126bb0c04e81a0d03de423ff8140ef2e70a_anthony_bourdain.jpg?auto=compress,format" alt="An older, tattooed Bourdain poses at table for a photo.">
+    <p id='img-caption'>Bourdain's bestselling tell-all memoir, <i>Kitchen Confidential</i>, revelled in the seedier aspects of the culinary world. It launched his career as a writer and travel host - and inspired a     generation of cooks and chefs.</p>
+  </div>
+  
+  <!-- First article segment -->
+  <article id='tribute-info'>
+    Anthony Bourdain was born on June 25, 1956 in New York City and grew up in Leonia, New Jersey. His father Pierre worked in retail before landing a job as an executive at Columbia Records. Gladys, his mother, was     a staff editor at <i>The New York Times</i>. His paternal grandparents emigrated from France after the First World War.
+    <br><br>
+    Following high school Anthony worked as a dishwasher at a seafood restaurant while attending Vassar College. Those early years working in kitchens proved influencial to the young Bourdain; the second and third       chapter of his bestseller <i> Kitchen Confidential </i> is largely dedicated to the restaurant's cooks and Bourdain's experiences while working there. He dropped out of university after two years and instead         decided to pursue his education at the Culinary Institute of America where he graduated in 1978.
+  </article>
+  
+  <div id='img-div'>
+    <img id='image2' src='https://dynaimage.cdn.cnn.com/cnn/w_1600/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F180608152835-10-bourdain-unfurled.jpg'>
+    <p id='img-caption'>Working as a dishwasher at a local seafood place, Bourdain admired the cooks for their pirate-like appearance and behavior.</p>
+  </div>
+    
+  <article id='tribute-info'>
+    Bourdain moved to New York City and worked his way through a series of kitchens. There he bounced around for a time, navigating a maze of failing restaurants with good pay, a business involved with the mob, and       managing all-convict crew. He married his high school girlfriend Nancy Putkoski in 1985, whom he had first followed to Vassar and then to New York. It was during this time that he developed a heroin addiction and     later described his relationship with Nancy as, "[t]hat kind of love and codependency and sense of adventure — we were criminals together. A lot of our life was built around that, and happily so.” 
+    <br><br>
+    Brasserie Les Halles, a french brasserie that served classic and traditional French dishes, hired on Bourdain as executive chef in 1998. While working at Les Halles Anthony wrote an expose of the culinary world       in <i>The New Yorker</i> titled, "Don't Eat Before Reading This" which was later expanded into his 1999 memoir, <i>Kitchen Confidential</i>, both showcasing the gritty reality of restaurant life. Despite making       it in the culinary world, it was Bourdain's sharp wit and knack for prose that first propelled him into fame.
+  </article>
+  
+  <div id='img-div'>
+    <img id='image3' src='https://pbs.twimg.com/media/D_2yVbTW4AEkrfT.jpg'>
+    <p id='img-caption'>Bourdain published a cookbook of some of his signature French bistro dishes at Les Halles, including veal short ribs and steak frites, escargots aux noix, and steak tartare.</p>
+  </div>
+  
+  <article id='tribute-info'>
+    Bourdain continued his success with the publication of his second bestseller in 2001, <i>A Cook's Tour</i>, which detailed traveling the world and trying exotic cuisines. The concept was turned into a travel show     of the same name for The Food Network in 2002, and later refined into the hour-long program <i>Anthony Bourdain: No Reservations</i> which would run from 2005 to 2012. 
+    <br><br> 
+    Bourdain would go on to guest judge various Food Network programs and launch two more travel series, <i>The Layover</i> and <i>Anthony Bourdain: Parts Unknown</i>. He won several Emmy Awards for his programs, a       Peabody Award, and was given a degree of Doctor of Humane Letters in Culinary Arts honoris causa by the Culinary Institute of America.
+  </article>
+  
+  <div id='img-div'>
+    <img id='image4' src='https://vietnam.travel/sites/default/files/styles/top_banner/public/2019-04/vietnamese%20food%20anthony%20bourdain-1.jpg?itok=HlJDKO0U'>
+    <p id='img-caption'><i>“If I'm an advocate for anything, it's to move. As far as you can, as much as you can. Across the ocean, or simply across the river. The extent to which you can walk in someone else's shoes or at least eat their food, it's a plus for everybody."</i> - Anthony Bourdain</p>
+  </div>
+  
+  <article id='tribute-info'>
+    Anthony Bourdain died in 2018 of an apparent suicide while filming for <i>Parts Unknown</i> in Strasbourg, France. A spontaneous sidewalk memorial was established outside of Brasserie Les Halles in his honor,         decorated with notes from his friends and fans in the culinary world. Restaurants and chefs around the world held tribute dinners and memorials in his name to donate to the <a id="tribute-link"                       href="https://suicidepreventionlifeline.org/" target="_blank">National Suicide Awareness Lifeline</a>. 
+    <br><br>
+    In 2019, the Culinary Institute of America established the <a id="tribute-link" href="https://www.ciaalumninetwork.com/s/898/17/interior.aspx?sid=898&gid=1&pgid=1784&content_id=2268" target="_blank">Anthony           Bourdain Legacy Scholarship</a> in his honor which enables students to study abroad and experience international cuisines and cultures.
+  </article>
+  
+  <div id='img-div'>
+    <img id='image5' src='https://www.gannett-cdn.com/-mm-/cbb4940a62bfa59b4ca4b3162058e782769168de/c=0-181-2200-3114/local/-/media/2016/09/26/DetroitFreePress/DetroitFreePress/636105007516072849-Bourdain.-Back-cover-photo.-APPETITES-Photo-credit---Bobby-Fisher-.jpg'>
+  </div>
+  
+</main>
