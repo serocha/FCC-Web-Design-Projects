@@ -1,0 +1,325 @@
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Outline&family=Electrolize&family=Jura&family=Libre+Barcode+39&family=Libre+Barcode+39+Text&family=Monoton&family=Orbitron&family=Press+Start+2P&family=Righteous&family=Roboto+Mono&family=Saira+Semi+Condensed&family=Space+Mono&family=Teko&family=Titillium+Web&family=Tomorrow&family=VT323&display=swap" rel="stylesheet">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<style>
+  body {
+    background-color: black;
+  }
+  
+  #backgroundImg {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    opacity: 0.025;
+    color: #78daaa;
+    z-index: -1;
+  }
+  
+  /* represents terminal nav bar */
+  #terminalBar {
+    position: fixed;
+    height: 1.4vw;
+    width: 100%;
+    top: 0px;
+    padding-top: 0.25vw;
+    background-color: #1d965a;
+    font-family: 'VT323';
+    font-size: 1.1vw;
+    font-weight: bold;
+    text-indent: 3vw;
+    opacity: 1;
+    box-shadow: 0 0.5vw 0 0 rgba(0,0,0,1);
+  }
+  
+  /* represents closing button for nav bar */
+  #terminalBox {
+    position: absolute;
+    background-color: #0e4a2c;
+    height: 1.4vw;
+    width: 1.4vw;
+    top: 0.1vw;
+    margin-left: 88.2em;
+  }
+  
+  /* fake box representing terminal viewport */
+  .viewport {  
+    margin-top: 4vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-color: #1bde7d;
+    border-width: 0.1vw;
+    border-style: solid;
+    box-shadow: 0 -1vw 0 0 #1bde7d;
+  }
+  
+  .header {
+    text-align: center;
+    color: #78daaa;
+    font-family: 'Roboto Mono';
+    letter-spacing: 0.3vw;
+  }
+  
+  /* Weyland Yutani name */
+  #weyland {
+    text-align: center;
+    color: #78daaa;
+    font-size: 2.6vw;
+    font-family: 'Monoton';
+    letter-spacing: 0.3vw;
+  }
+  
+  /* container that holds a left text element and a right animated text bar */
+  .container {
+    width: 100%;
+    margins: auto;
+    font-family: 'Roboto Mono';
+    letter-spacing: 0.3vw;
+  }
+  
+  /* blinking text bar placed next to */
+  .blink {
+    text-align: left;
+    display: inline-block;
+    color: #78daaa;
+    font-size: 1.25vw;
+    animation: blink 1s step-start 0s infinite;
+    -webkit-animation: blink 1s step-start 0s infinite;
+  }
+  
+  @keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+  
+  /* bottom thank you */
+  .thanks {
+    text-align: center;
+    color: #78daaa;
+    font-size: 0.8vw;
+    float: center;
+  }
+  
+  /* id required to pass project, describes form */
+  .description {
+    text-align: left;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-bottom: 1vw;
+    color: #78daaa;
+    font-family: 'Roboto Mono';
+    font-size: 0.8vw;
+    letter-spacing: 0.2vw;
+  }
+  
+  /* title prompt for input */
+  .fieldTitle {
+    text-align: left;
+    margin-left: 10vw;
+    color: #78daaa;
+    font-family: 'Roboto Mono';
+    font-size: 1.2vw;
+    letter-spacing: 0.3vw;
+  }
+  
+  /* input field */
+  .field {
+    margin-left: 10vw;
+    margin-top: 0.2vw;
+    margin-bottom: 0.5vw;
+    width: 20vw;
+    color: #78daaa;
+    font-family: 'VT323';
+    background-color: rgba(0,0,0,0);
+    font-size: 1.4vw;
+    letter-spacing: 0.3vw;
+  }
+  
+  /* checkbox & radio input */
+  .otherInput {
+    margin-top: 0.2vw;
+    margin-bottom: 0.5vw;
+    font-family: 'VT323';
+    font-size: 1.4vw;
+    letter-spacing: 0.3vw;
+  }
+  
+  .button{
+    width: 7vw;
+    margin: 0 auto;
+    background-color: #78daaa;
+    font-family: 'VT323';
+    font-size: 1.4vw;
+    letter-spacing: 0.3vw;
+  }
+  
+  .buttonContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+</style>
+
+<main>
+  <img id='backgroundImg' src='https://luka712.github.io/images/6/image5.png'>
+  
+  <section id='terminalBar'> PERSONAL TERMINAL <div id='terminalBox'></div> </section>
+  
+  <div class='viewport'>
+    
+    <!-- Note that the h1 element is blank, used only to fulfill requirements of project -->
+    <h1 id='title' style='font-size: 0px;'>I declare this empty</h1>
+    
+    <header>
+      <p id='weyland'> Weyland-Yutani</p>
+      <p class='header' style='font-size:2vw;'>WELCOMES YOU HOME<br></p>
+      
+    </header>
+    <br><br><br>
+    
+    <form id='survey-form' action='/my-form-handling-page'>
+      
+      <p id='description' class='description' style='padding-bottom: 0;'>Please fill out your WY-9901-D Debrief Form before disembarking<span class='blink'>|</span></p>
+      
+      <h2 class='description' style='border-top: solid; font-size: 1.8vw;'>Personal Information</h2>
+      <div style='display: flex; flex-direction: rows;'>
+        <div>
+          <label for='lName' id='name-label' class='fieldTitle'>
+            Last Name <br>
+          </label>
+          <input type='text' id='name' class='field' placeholder='Doe' required>
+        </div>
+        
+        <div>
+          <label for='fName' id='name-label' class='fieldTitle'>
+            First Name <br>
+          </label>
+          <input type='text' id='firstName' class='field' placeholder='John' required>
+        </div>     
+      </div>
+      <br><br>  
+      
+      <label for='email' id='email-label' class='fieldTitle'>
+        InComms Domain <br>
+      </label>
+      <input type='email' id='email' class='field' style='width: 35vw;' placeholder='JohnDoe@Weyland-Yutani.in' required>
+      <br><br><br>
+           
+      
+        <div>
+          <label for='crewPosition' id='position-label' class='fieldTitle'>
+            Crew Position <br>
+          </label>
+          <select name='position' id='dropdown' class='field' style='background-color:black; width: 16vw;' required>
+            <option value='' disabled selected>Job Title</option>
+            <option value='captain'>Ship Master</option>
+            <option value='xo'>Executive Officer</option>
+            <option value='wo'>Warrant Officer</option>
+            <option value='no'>Navigation Officer</option>
+            <option value='so'>Science Officer</option>
+            <option value='ce'>Chief Engineer</option>
+            <option value='st'>Science Technician</option>
+            <option value='et'>Engineering Technician</option>
+            <option value='jt'>Junior Technician</option>
+          </select>
+          <br><br>
+        </div>
+        <br>
+    
+    <h3 class='description' style='border-bottom: none; border-top: solid; font-size: 1.8vw;'>Assignment Details</h3>
+    
+    <div style='display: flex; flex-direction: rows;'>
+      <div>
+        <label for='mission' id='mission-label' class='fieldTitle'>
+            Operation <br>
+        </label>
+        <select name='assignment' id='dropdown2' class='field' style='background-color: black; width: 16vw;' required>
+          <option value='' disabled selected>Assignment</option>
+          <option value='m'>Mining Operations</option>
+          <option value='h'>Hauling Operations</option>
+          <option value='p'>Passenger Transit</option>
+          <option value='s'>Geology Survey</option>
+          <option value='b'>Biology Survey</options>
+          <option value='i'>Intelligence Operations</option>
+          <option value='spec'>Special Assignment</option>
+        </select>
+      </div>
+      <div>
+        <label for='daysOnDuty' id='number-label' class='fieldTitle'>
+          Days on Station <br>
+        </label>
+        <input type='number' id='number' class='field' style='width:4.2vw;' min='1' max='9999' maxlength='4' placeholder='365' required>
+        <br><br>
+      </div>
+  
+      </div>
+    <br><br>
+    
+    <label for='successRadio-label' class='description' style='border-bottom: none;'>Did the crew accomplish the assigned task?<br><br>
+      <div style='margin-left: 10vw;'>
+        <input type='radio' id='event' class='otherInput' name='success-fail' value='completeYes' required>  YES<br>
+        <input type='radio' id='event' class='otherInput' name='success-fail' value='completeNo'>  NO
+      </div> 
+    </label>
+    <br><br>
+    
+    <label for='failExplain-label' class='description' style='border-bottom:none;'>
+      If not, please explain why.<br><br>
+    </label>
+    <textarea name='explainFail' id='textBox' class='field' rows='5' columns='40' style='width: 58vw;' placeholder='Enter comments'></textarea>
+    <br><br><br>
+    
+    <label for='unusualActivity-label' class='description'>
+      Did you experience unusual activity while on assignment?<br><br>
+      <div style='margin-left: 10vw; display: flex; flex-direction: rows;'>
+        <div>
+          <input type='checkbox' id='activity' class='otherInput' name='oddCoworker' value='oddCo'>  ODD BEHAVIOR OF COWORKER<br>
+          <input type='checkbox' id='activity' class='otherInput' name='fightCoworker' value='fightCo'>  CONFLICT WITH COWORKER<br>
+          <input type='checkbox' id='activity' class='otherInput' name='injuredCoworker' value='injCo'>  INJURED COWORKER<br>
+          <input type='checkbox' id='activity' class='otherInput' name='deadCoworker' value='deadCo'>  DEATH OF COWORKER<br>
+          <input type='checkbox' id='activity' class='otherInput' name='other' value='other'>  OTHER<br>
+        </div>
+        <div style='margin-left: 2vw;'>
+          <input type='checkbox' id='activity' class='otherInput' name='anomaly' value='anomaly'>  ANOMALOUS READING<br>
+          <input type='checkbox' id='activity' class='otherInput' name='signal' value='signal'>  NON-USCSS SIGNAL<br>
+          <input type='checkbox' id='activity' class='otherInput' name='malfunction' value='malfunc'>  IRRATIONAL MALFUNCTION<br>
+          <input type='checkbox' id='activity' class='otherInput' name='ruin' value='ruin'>  NON-USCSS STRUCTURE<br>
+        </div>
+        <div style='margin-left: 2vw;'>
+          <input type='checkbox' id='activity' class='otherInput' name='biohazard' value='bio'>  BIOHAZARDOUS MATERIAL<br>
+          <input type='checkbox' id='activity' class='otherInput' name='organism' value='org'>  HOSTILE ORGANISM<br>
+          <input type='checkbox' id='activity' class='otherInput' name='remains' value='rem'>  ORGANIC REMAINS<br>
+          <input type='checkbox' id='activity' class='otherInput' name='parasite' value='para'>  PARASITIC CONTACT<br>
+        </div>
+      </div>
+    </label>
+    <br><br>
+    
+    <label for='unusualExplain-label' class='description'>
+      If so, please explain each incident in further detail.<br><br>
+    </label>
+    <textarea name='explainUnusual' id='textBox' class='field' rows='5' columns='40' style='width: 58vw;' placeholder='Enter comments'></textarea>
+    <br><br><br>
+    
+    <p class='description' style='font-size: 0.5vw;'>I hereby declare that all information provided is true to the best of my knowledge and that false statements may result in immediate termination and/or legal or penal action. I provide consent to a comprehensive review of all statements made herein, and that a debriefing interview and/or other actions may result as required by the reviewing agent.</p>
+    
+    <div class='buttonContainer'>
+      <button type='submit' id='submit' class='button'>SUBMIT</button>
+    </div>
+    
+    </form> 
+    <br><br><br>
+  
+    <div class='container'>
+      <p class='thanks'> On behalf of the company, we thank you for <br><br><span style='font-size: 1.5vw;'><strong>BUILDING BETTER WORLDS</strong></span></p><br><br>       
+    </div>
+  </div>
+</main>
