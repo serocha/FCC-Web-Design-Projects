@@ -1,0 +1,456 @@
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Modak&display=swap" rel="stylesheet">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<nav id='navbar' class='navbar'>
+  <header class='title' style='margin: 1vw;'>
+    Bologna Wiki
+  </header>
+  <ul>
+    <li> <a class='nav-link' href='#What_is_Bologna?'>What is Bologna?</a> </li>
+    <li> <a class='nav-link' href='#Origins'>Origins</a> </li>
+    <li> <a class='nav-link' href='#Migration_to_America'>Migration to America</a> </li>
+    <li> <a class='nav-link' href='#Industrialization'>Industrialization</a> </li>
+    <li> <a class='nav-link' href='#Hard_Times_&_Processed_Foods'>Hard Times & Processed Foods</a> </li>
+    <li> <a class='nav-link' href='#Ingredients_&_Spices'> Ingredients & Spices </a> </li>
+  </ul>
+</nav>
+
+<main id='main-doc'>
+  <section id='What_is_Bologna?' class='main-section'>
+    <header class='title'>What is Bologna?</header>
+    <article>
+      <p>
+        Bologna is a cold-cut sausage made of finely minced meat that is cured, cooked, and sometimes smoked. Prime cuts, trimmings, fat, and (more rarely) organ meat may be used. Bologna may be extruded into natural or artificial casings, such as intestine or collagen, but is often served with the casing removed. 
+      </p>
+      <br>
+      <p>
+        Bologna - colloquially known as "baloney" - was once the most ubiquitous sandwich meat in the United States, a quintessential lunch staple often placed on white bread and paired simply with mayonnaise and a slice of American cheese. While the word conjurs images of brown paper bags and packed lunches, bologna's use was widespread. Institutions like schools and prisons relied on the inexpensive meat as a source of cheap protein. In the 1990s Americans began to seek out less processed foods and - as a result - bologna sales steadily decreased year over year.
+      </p>
+    </article>
+  </section>
+
+  <section id='Origins' class='main-section'>
+    <header class='title'>Origins</header>
+    <article>     
+      <p>
+        The roots of modern bologna can be traced back to the mortadella sausage originating from the Emilia-Romagna region of northern Italy. In fact, bologna takes its name from the region's capital of Bologna.
+      </p>
+      <br>
+      <p>
+        Mortadella translates to "mortar-ground sausage" in reference to the traditional method of grinding the pork filling into paste with a mortar. As with bologna, mortadella is also a <em>salume</em>, or cured cold-cut, that contains finely ground meat. Where bologna can contain a variety of meats and is uniform in texture, mortadella is made solely of pork and contains cubes of cooked pork fat that give it a marbled appearance.
+      </p>
+      <br>
+      <!--  This code is being used to display recipes to meet project requirements  -->
+      <code>
+        <h3 class='recipeTitle'> Mortadella di Bologna </h3>
+        <div class='recipeWrap'>   
+          <table class='recipe'>
+            <tr>
+              <td>pork</td>
+              <td>1 1&frasl;2 lbs</td>
+            </tr>
+            <tr>
+              <td>jowls, bacon, or fat trimmings</td>
+              <td>1&frasl;2 lb</td>
+            </tr>
+            <tr>
+              <td>back fat</td>
+              <td>1&frasl;4 lb</td>
+            </tr>
+            <tr style='visibility: hidden;'> <td style='border: none'>emptyrow</td> </tr>
+            <tr>
+              <td>salt</td>
+              <td>1 tbsp</td>
+            </tr>
+            <tr>
+              <td>insta cure #1</td>
+              <td>1&frasl;2 tsp</td>
+            </tr>
+            <tr>
+              <td>white pepper</td>
+              <td>1 tsp</td>
+            </tr>
+            <tr>
+              <td>peppercorns, whole</td>
+              <td>1 tsp</td>
+            </tr>
+            <tr>
+              <td>coriander</td>
+              <td>1&frasl;4 tsp</td>
+            </tr>
+            <tr>
+              <td>garlic powder</td>
+              <td>1&frasl;2 tsp</td>
+            </tr>
+            <tr>
+              <td>anise</td>
+              <td>1&frasl;2 tsp</td>
+            </tr>
+            <tr>
+              <td>mace</td>
+              <td>1&frasl;2 tsp</td>
+            </tr>
+            <tr>
+              <td>caraway, ground</td>
+              <td>1&frasl;2 tsp</td>
+            </tr>
+            <tr>
+              <td>pistachios, whole</td>
+              <td>1&frasl;2 cup</td>
+            </tr>
+            <tr>
+              <td>red wine</td>
+              <td>1&frasl;2 cup</td>
+            </tr>
+            <tr>
+              <td style='border-bottom: none;'>cold water</td>
+              <td style='border-bottom: none;'>2 oz</td>
+            </tr>
+          </table>
+          <ul style='recipe'>
+            <li style='border-bottom: 1px solid rgba(163, 100, 91, 0.5); width: 90%;'>Instructions</li>
+            <li style='padding-top: 1vw;'>dice back fat into 1&frasl;4" cubes</li>
+            <li>grind all meat through a 1&frasl;4" plate</li>
+            <li>partially refreeze and grind again through a 1&frasl;8" plate</li>
+            <li>mix together all ingredients, leaving out peppercorns and pistachios</li>
+            <li>emulsify meat in food processor with red wine and cold water</li>
+            <li>mix meat paste with fat, pistachios, and peppercorns</li>
+            <li>stuff into 4" fibrous casings</li>
+            <li>cook in water at 174&deg;F until internal temperature is 154&deg;F</li>
+            <li>allow to cool and refridgerate</li>
+          </ul>
+          <span style='font-size: 12px; width: 80%; margin-left: 4vw;'>recipe courtesy of meatsandsausages.com</span>
+        </div>
+      </code>
+      <br>
+      <p>
+        Labor-intensive and time-consuming to produce, mortadella remained a delicacy for the nobility until the advent of modern machinery. The European Union gave mortadella a special status in 1998, the Protected Geographical Indication (or IGP in Italian). Only product that meets strict guidelines may receive a "Mortadella Bologna IGP" designation.
+      </p>
+    </article>
+  </section>
+
+  <section id='Migration_to_America' class='main-section'>
+    <header class='title'>Migration to America</header>
+    <article>
+      <p>
+        Despite Italian roots, bologna's introduction to the new world did not come from Italian immigrants. Instead that distinction is owed to the Germans that settled all over the Midwest, Southeastern Canada, and rural Pennsylvania. They brought with them a tradition of butchery, sausage-making, and an eye for opportunity.
+      </p>
+      <br>
+      <p>
+        Rather than strictly utilize pork as in mortadella, immigrant German butchers would incorporate whatever local meats that were abundant - similar to the many varieties of wurst made in Germany. Wild turkey, chicken, and beef all made their way into the improvised sausages, which was given the monicker of 'bologna' due to the fine texture. 
+      </p>
+      <br>
+      <code>
+        <h3 class='recipeTitle'> Lebanon Bologna </h3>
+        <div class='recipeWrap'>   
+          <table class='recipe'>
+            <tr>
+              <td>beef <span style='visibility: hidden'>emptyemptyemptyempty</span></td>
+              <td>2 1&frasl;4 lbs</td>
+            </tr>
+            <tr style='visibility: hidden;'> <td style='border: none'>emptyrow</td> </tr>
+            <tr>
+              <td>salt</td>
+              <td>5 tsp</td>
+            </tr>
+            <tr>
+              <td>insta cure #1</td>
+              <td>1&frasl;2 tsp</td>
+            </tr>
+            <tr>
+              <td>sugar, 3%</td>
+              <td>2 tbsp</td>
+            </tr>
+            <tr>
+              <td>dextrose, 0.3%</td>
+              <td>1&frasl;2 tsp</td>
+            </tr>
+            <tr>
+              <td>pepper</td>
+              <td>1 1&frasl;2 tsp</td>
+            </tr>
+            <tr>
+              <td>allspice</td>
+              <td>1 tsp</td>
+            </tr>
+            <tr>
+              <td>cinnamon</td>
+              <td>1 tsp</td>
+            </tr>
+            <tr>
+              <td>cloves, ground</td>
+              <td>1&frasl;2 tsp</td>
+            </tr>
+            <tr>
+              <td style='border-bottom: none'>ginger</td>
+              <td style='border-bottom: none'>1&frasl;3 tsp</td>
+            </tr>
+          </table>
+          <ul style='recipe'>
+            <li style='border-bottom: 1px solid rgba(163, 100, 91, 0.5); width: 90%;'>Instructions</li>
+            <li style='padding-top: 1vw;'>grind beef with 3&frasl;4" plate, mix with salt, sugar, and cure #1</li>
+            <li>keep for 10 days at 40-43&deg;F</li>
+            <li>grind cured meat through a 1&frasl;8" or 3&frasl;16" plate</li>
+            <li>mix together meat and all remaining ingredients</li>
+            <li>stuff into 40-120mm natural beef middles, collagen or fibrous casings</li>
+            <li>for larger casings, stockinette or lace with butcher twine for support</li>
+            <li>cold smoke for 4-8 days below 72&deg;F at 85% humidity</li>
+            <li>for a drier sausage, dry at 54-60&deg;F at 80-85% humidity</li>
+            <li>store at 50-59&deg;F at less than 75% humidity</li>
+          </ul>
+          <span style='font-size: 12px; width: 80%; margin-left: 4vw;'>recipe courtesy of meatsandsausages.com</span>
+        </div>
+      </code>
+      <br>
+      <p>
+        One such sausage is Lebanon bologna which is uncooked, heavily smoked and fermented. Originating in the 19th century in Lebanon County, Pennsylvania, this all-beef sausage looks more similar to salami in texture and has a prominant tangy flavor.
+      </p>
+      <br>
+      <p>
+        By the early 20th century, bologna had become a lunchtime meal for farm hands and factory workers in German communities across the Midwest. Still, it would take a couple of key inventions and a series of world events for bologna to become the cold-cut of choice for American households from coast to coast.
+      </p>
+      <br>
+    </article>
+  </section>
+
+  <section id='Industrialization' class='main-section'>
+    <header class='title'>Industrialization</header>
+    <article>
+      <p>
+        The first recorded recipe for a sandwich in the United States did not appear until 1840. Sandwiches rose in popularity towards the end of the 19th century, though, and were seen as a dainty afternoon snack for ladies, or as a light meal for gentlemen before downing their nightcap. Every ingredient would have to be cut individually by hand - to the chagrin of many a delicatessen employee.
+      </p>
+      <br>
+      <p>
+        That began to change in the early 1900s with the advent of simple mechanical slicers. Originally operated by crank, these machines meant that delicatessens could quickly prepare sliced meats by the pound. The bread slicer, invented in the 1920s, allowed bakeries to offer packages of pre-sliced loaves for their customers. Sandwiches offered a quick-to-produce and relatively cheap meal on the go.
+      </p>
+      <br>
+      <p>
+        Bologna too was transformed by commercialization. Cheap variants of the sausage appeared in grocery stores that incorporated trimmings, organ meats, and other scraps left from butchering. The trend of using meat byproducts created an association with bologna and inferior quality that endures to this day.
+      </p>
+      <br>
+      <code>
+        <h3 class='recipeTitle'> American Bologna </h3>
+        <div class='recipeWrap'>   
+          <table class='recipe'>
+            <tr>
+              <td>beef trimmings</td>
+              <td>1 1&frasl;2 lbs</td>
+            </tr>
+            <tr>
+              <td>pork trimmings</td>
+              <td>1&frasl;2 lb</td>
+            </tr>
+            <tr>
+              <td>pork back fat or hard fat trimmings</td>
+              <td>2 oz</td>
+            </tr>
+            <tr style='visibility: hidden;'> <td style='border: none'>emptyrow</td> </tr>
+            <tr>
+              <td>salt</td>
+              <td>1 tbsp</td>
+            </tr>
+            <tr>
+              <td>insta cure #1</td>
+              <td>1&frasl;2 tsp</td>
+            </tr>
+            <tr>
+              <td>white pepper</td>
+              <td>1 tsp</td>
+            </tr>
+            <tr>
+              <td>coriander</td>
+              <td>1 tsp</td>
+            </tr>
+            <tr>
+              <td>paprika, sweet</td>
+              <td>1 tsp</td>
+            </tr>
+            <tr>
+              <td>nutmeg</td>
+              <td>1&frasl;4 tsp</td>
+            </tr>
+            <tr>
+              <td>garlic</td>
+              <td>1 clove</td>
+            </tr>
+            <tr>
+              <td>potato flour</td>
+              <td>2 oz</td>
+            </tr>
+            <tr>
+              <td style='border-bottom: none'>cold water</td>
+              <td style='border-bottom: none'>1 cup</td>
+            </tr>
+            </table>
+          <ul style='recipe'>
+            <li style='border-bottom: 1px solid rgba(163, 100, 91, 0.5); width: 90%;'>Instructions</li>
+            <li style='padding-top: 1vw;'>grind beef trimmings through a 3&frasl;8" plate</li>
+            <li>grind pork trimmings through a 3&frasl;8" plate</li>
+            <li>grind fat through a 3&frasl;8" plate</li>
+            <li>use a food processor to emulsify beef with 1&frasl;2 cup of the water</li>
+            <li>add pork and salt, emulsify</li>
+            <li>add fat, cure #1, and remaining seasonings, emulsify</li>
+            <li>add remaining water as needed during emulsifying process</li>
+            <li>stuff into beef bungs or middles, cellulose or fibrous casings</li>
+            <li>hang at 38&deg;F overnight, or for 2-3 hours at room temp</li>
+            <li>smoke at 115&deg;F for 3 hours</li>
+            <li>cook in water at 160&deg;F until sausage reaches 156&deg;F</li>
+            <li>shock in cold water for 10 min, cool in air, refrigerate</li>
+          </ul>
+          <span style='font-size: 12px; width: 80%; margin-left: 4vw;'>recipe courtesy of meatsandsausages.com</span>
+        </div>
+      </code>
+    </article>
+  </section>
+
+  <section id='Hard_Times_&_Processed_Foods' class='main-section'>
+    <header class='title'>Hard Times & Processed Foods</header>
+    <article>
+      <p>
+        The Stock Market Crash of 1929 marked the beginning of The Great Depression. Throughout the 1930s, millions of Americans were dislocated or unemployed, and hundreds of thousands relied on bread lines and soup kitchens for sustenance. Meat prices rose, forcing families to turn to inexpensive alternatives. While beans and eggs were the go to choice for many, processed meats like hot dogs, potted meats, and bologna found their way into a myriad of Depression-era recipes.
+      </p>
+      <br>
+      <code>
+        <h3 class='recipeTitle'> Great Depression Casserole </h3>
+        <div class='recipeWrap'>   
+          <table class='recipe'>
+            <tr>
+              <td>bacon, chopped </td>
+              <td>4 slices</td>
+            </tr>
+            <tr>
+              <td>medium bell pepper, chopped <span style='visibility: hidden;'>emptyemptyemptyemptyempty</span></td>
+              <td>about 1 cup</td>
+            </tr>
+            <tr>
+              <td>large onion, chopped</td>
+              <td>about 1 cup</td>
+            </tr>
+            <tr>
+              <td>garlic, minced</td>
+              <td>2-3 cloves (1 tbsp)</td>
+            </tr>
+            <tr>
+              <td>canned pork & beans, undrained</td>
+              <td>1 15 oz can</td>
+            </tr>
+            <tr>
+              <td>canned chili & beans</td>
+              <td>2 15 oz cans</td>
+            </tr>
+            <tr>
+              <td>bologna, cut into 1&frasl;2" cubes</td>
+              <td>1 1&frasl;2 lbs</td>
+            </tr>
+            <tr>
+              <td style='border-bottom: none'>cheddar cheese, shredded</td>
+              <td style='border-bottom: none'>1 cup</td>
+            </tr>
+            </table>
+          <ul style='recipe'>
+            <li style='border-bottom: 1px solid rgba(163, 100, 91, 0.5); width: 90%;'>Instructions</li>
+            <li style='padding-top: 1vw;'>preheat oven to 400&deg;F & grease a 3 qt baking dish</li>
+            <li>in a large saute pan over medium heat, cook bacon until browned</li>
+            <li>add bell pepper, onion, and garlic, cook until onion is translucent</li>
+            <li>add bologna and cook until edges begin to brown & caramelize</li>
+            <li>stir in pork & beans & chili until heated through</li>
+            <li>pour into baking dish, cover with cheddar</li>
+            <li>bake for 20 min or until bubbling and cheese is melted</li>
+          </ul>
+          <span style='font-size: 12px; width: 80%; margin-left: 4vw;'>recipe courtesy of recipelion.com</span>
+        </div>
+      </code>
+      <br>
+      <p>
+        Following hot on the heels of the hardships of the 1930s, World War II and wartime rationing cemented the cost-conscious habits and love of processed food of the decade prior. Canned meats were an easy way to keep soldiers fed on the battlefields of the Pacific and Europe. Meat rationing back home meant that families once again turned to products like SPAM and bologna for cheap protein.
+      </p>
+      <br>
+      <p>
+        The 1950s ushered in an era of supermarkets, cheap electric refrigerators, and a generation that loved packaged foods. It was during this period that Oscar Mayer pioneered vacuum-sealed meat packaging leading to a boom in pre-sliced, pre-packaged deli meats. By the 1970s, Oscar Mayer was selling as much bologna as they were selling hot dogs. In this environment bologna would emerge a fundamental component of American sandwiches and recipes right up through the 1980s.
+      </p>
+    </article>
+  </section>
+  
+  <section id='Ingredients_&_Spices' class='main-section'>
+    <header> <h2 class='title'>Ingredients & Spices</h2> </header>
+    <article>
+      <p>
+        American bologna can be made with a wide variety or blends of meats including chicken, turkey, beef, and pork. High-end bolognas might utilize more expensive cuts, but fatty or undesirable trimmings and some organ meat may be incorporated as the fine grind will render the texture smooth and uniform. Plant-based 'bolognas' that use tofu or seitan to immitate the taste and texture of traditional bolognas are also available.
+      </p>
+      <br>
+      <p>
+        All manner of casings may be used in the production of bologna. Artificial casings such as collagen, cellulose, or fibrous, are used to make skinless bolognas, although collagen casings come in both edible and non-edible versions. Natural casings like beef bungs or middles will create a larger sausage size that is typically associated with bologna. Ring bologna is no different from other types but is cased with beef or artificial ring casings, giving it the appearance of a kielbasa or Polish sausage.
+      </p>
+      <br>
+      <code>
+        <h3 class='recipeTitle'> Ring Bologna </h3>
+        <div class='recipeWrap'>   
+          <table class='recipe'>
+            <tr>
+              <td>beef</td>
+              <td>1 1&frasl;2 lbs</td>
+            </tr>
+            <tr>
+              <td>pork trimmings</td>
+              <td>2&frasl;3 lb</td>
+            </tr>
+            <tr style='visibility: hidden;'> <td style='border: none'>emptyrow</td> </tr>
+            <tr>
+              <td>salt</td>
+              <td>1 tbsp</td>
+            </tr>
+            <tr>
+              <td>insta cure #1</td>
+              <td>1&frasl;2 tsp</td>
+            </tr>
+            <tr>
+              <td>white pepper</td>
+              <td>1 tsp</td>
+            </tr>
+            <tr>
+              <td>paprika</td>
+              <td>1 tsp</td>
+            </tr>
+            <tr>
+              <td>allspice</td>
+              <td>1 tsp</td>
+            </tr>
+            <tr>
+              <td>coriander</td>
+              <td>1tsp</td>
+            </tr>
+            <tr>
+              <td style='border-bottom: none'>cold water</td>
+              <td style='border-bottom: none'>5&frasl;8 cup</td>
+            </tr>
+            </table>
+          <ul style='recipe'>
+            <li style='border-bottom: 1px solid rgba(163, 100, 91, 0.5); width: 90%;'>Instructions</li>
+            <li style='padding-top: 1vw;'>grind meats through a 3&frasl;16" plate, keeping lean meat apart from fat trimmings</li>
+            <li>refreeze and grind again, then repeat with a 1&frasl;8" plate</li>
+            <li>mix lean beef with all spices and 1&frasl;3 of the cold water</li>
+            <li>add lean pork and another 1&frasl;3 of the water and emulsify</li>
+            <li>add remaining fat and last 1&frasl;3 of water and emulsify</li>
+            <li>stuff into beef round casings and form 18" sections</li>
+            <li>use butcher's twine to reinforce the ends and make a hanging loop</li>
+            <li>hang for 1 hour or until dry to touch</li>
+            <li>smoke for 2 hours at 120-140&deg;F</li>
+            <li>gradually increase the temperature to 160-170&deg;F until internal temp reaches about 156&deg;F</li>
+            <li>shower or shock in cold water for 10 min</li>
+            <li>hang for 2 hours and refrigerate</li>
+          </ul>
+          <span style='font-size: 12px; width: 80%; margin-left: 4vw;'>recipe courtesy of meatsandsausages.com</span>
+        </div>
+      </code>
+      <br>
+      <p>
+        Common seasonings include black pepper, ground celery seed, coriander, garlic powder, and nutmeg. Adding anise, mace, caraway, and myrtle berries will give it a flavor akin to mortadella. Adding mustard powder, powdered milk, onion powder, and paprika will provide a taste similar to German bologna or wurst-style sausages. 
+      </p>
+      <br>
+      <p style='margin-bottom: 8vw;'>
+        Experiment with your ingredients and casings to find a taste and size you enjoy most.
+      </p>
+      <br>
+    </article>
+  </section>
+</main>
