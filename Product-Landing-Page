@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Product Landing Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Fugaz+One&family=Meddon&family=Permanent+Marker&family=Righteous&family=Yellowtail&family=Kaushan+Script&display=swap" rel="stylesheet">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<main> 
+  
+  <!-- Navbar with logo -->
+  <header id='header' class='header'>
+    <img id='header-img' style='height: 2.5rem; margin-left: 4%; margin-top: 0.2rem;' src='https://www.pinclipart.com/picdir/big/459-4592419_ocp-robocop-clipart.png'>
+    <span class='headerText'>
+      Sunblock<sup style='font-size: 0.8rem; letter-spacing: 1px;'>TM</sup> 
+    </span> 
+    <nav id='nav-bar' class='headerText' style='font-size: 1rem; font-family: "Baloo 2"; font-weight: bold; letter-spacing: 0px;'>
+      <ul class='nav-form'>
+        <li> <a class='nav-link' href='#pledge'>our pledge</a> </li>
+        <li> <a class='nav-link' href='#advantage'>our advantage</a> </li>
+        <li> <a class='nav-link' href='#products'>our products</a> </li>
+        <li> <a class='nav-link' href='#media'>media</a> </li>
+      </ul>
+    </nav> 
+  </header>
+  
+  <!-- splash image and first section -->
+  <section>
+    <img class='backgroundImg' src='https://images.squarespace-cdn.com/content/v1/5cfd412c3b35680001d96c9e/1569433421915-61WFTVH3ZADZUWC26428/ke17ZwdGBToddI8pDm48kHZxd8Eyiv3TUSq712ASl1J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UeE_9gQFIVop62vvw5f2lRcG_aPsLRludmpCTClV2-UhfvP3SPHe6Ky8NGlef7R0IQ/Girl%2Bfloating%2Bin%2Bpool%2Bcompressed.jpg?format=2500w'>
+    <div id='pledge' class='imgOverlay'>
+      <h1 class='imgOverlayText' style='font-family: Yellowtail; font-size: 2rem; margin-bottom: 0.1rem;'>Find Your Skin's Soulmate</h1>
+      <h2 class='imgOverlayText' style='font-family: Righteous; font-size: 1.25rem; margin-top: 0.1rem;'>with Omni Consumer Chemicals</h2>
+    </div>
+    
+    <article class='articleWrap'>
+      <div class='article' style='padding-top:1.5rem;'>
+        It is our passion to bring you premium, long-lasting sunscreens at unbeatable prices, crafted with care and delivered to your doorstep with a smile. As a wholly owned subsidiary of Omni Consumer Products, we leverage the research, manufacturing, and logistics experience of a world-class megacorporation while staying true to our artisanal roots. 
+        <br>
+        <!--  jump point for navigation tag  -->
+        <p id='advantage'>
+          This is <strong>The OCP Advantage</strong> and it is our gift to you.
+        </p>
+      </div>
+    </article>
+    
+    <!--  Containers and handling for icon and feature display:  
+          featContainer is the main container that formats the elements and flexes them
+          featColumn puts its elements into a column format
+          featRow puts its elements into a row format
+
+          First, three main elements are put into column. Each main element is a row containing an icon and descriptive text.
+          The descriptive text is broken into a header and a text body arranged into a column.  
+    -->
+    <article id='features' class='articleWrap'>
+      <div class='featContainer'>
+        <div class='flexColumn'>
+          <div class='flexRow'>
+            <div id='icon'> 
+              <image class='icon' src='https://image.flaticon.com/icons/svg/1281/1281240.svg'> 
+            </div> 
+            <div class='flexColumn'>
+              <h2 style='font-size: 1.6rem;'>Extreme Protection</h2> 
+              <div class='featureText'>
+                We make our sunscreens with the same advanced compounds that shield astronauts and high-altitude pilots from solar radiation. Endure the harshest sun exposures - even in no-ozone hotspots.
+              </div> 
+            </div>
+          </div>
+            <div class='flexRow' style='margin-top: 2rem;'>
+              <div id='icon'>
+                <image class='icon' src='https://image.flaticon.com/icons/svg/1619/1619452.svg'>
+              </div>
+              <div class='flexColumn'>
+                <h2 style='font-size: 1.6rem;'>Long-Lasting</h2> 
+                <div class='featureText'>
+                  Our products are proven to offer UV protection for up to 5 days with a patented formula that seals out water and sweat. Relax knowing that your dip in the pool will be worry-free.
+                </div>            
+              </div>
+            </div>
+            <div class='flexRow' style='margin-top: 2rem;'>
+              <div id='icon'>
+                <image class='icon' src='https://image.flaticon.com/icons/svg/2782/2782661.svg'>
+              </div>
+              <div class='flexColumn'>
+                <h2 style='font-size: 1.6rem;'>Affordable</h2>
+                <div class='featureText'>
+                  We use OCP's extensive production and transportation network to cut out the middleman and eliminate merchant fees. Quality, fast, and cheap? Now I'd buy that for a dollar! 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  
+  <!--  flexbox containing three side-by-side product displays with prices  -->
+  <section id='products'>
+    <div class='overlay'>
+      <h1 class='imgOverlayText' style='font-family: Yellowtail; font-size: 2rem; margin-bottom: 0.1rem;'>Pick a Lasting Partner</h1>
+      <h2 class='imgOverlayText' style='font-family: Righteous; font-size: 1.25rem; margin-top: 0.1rem;'>that your skin will love</h2>
+    </div>
+    <article class='articleWrap'>
+      <div class='productWrap'>
+        <div class='flexRow'>
+          <div class='productColumn'>
+            <div class='productHead'>
+              Sunblock<sup style='font-size: 0.8rem; letter-spacing: 1px;'>TM</sup> 1400
+            </div>
+            <p class='productText' style='font-size: 1.8rem; margin: 0.5rem 0 0.5rem;'>
+              $20
+            </p>
+            <p class='productText'>
+              24-hr protection<br>
+              semi-water resistant<br>
+              ocean breeze scent<br>
+              64oz
+            </p>
+            <button class='buy'>purchase</button>
+          </div>
+          <div class='productColumn'>
+            <div class='productHead'>
+              Sunblock<sup style='font-size: 0.8rem; letter-spacing: 1px;'>TM</sup> 5000
+            </div>
+            <p class='productText' style='font-size: 1.8rem; margin: 0.5rem 0 0.5rem;'>
+              $35
+            </p>
+            <p class='productText'>
+              83-hr protection<br>
+              water resistant<br>
+              tropical wave scent<br>
+              64oz
+            </p>
+            <button class='buy'>purchase</button>
+          </div>
+          <div class='productColumn'>
+            <div class='productHead'>
+              Sunblock<sup style='font-size: 0.8rem; letter-spacing: 1px;'>TM</sup> 7500
+            </div>
+            <p class='productText' style='font-size: 1.8rem; margin: 0.5rem 0 0.5rem;'>
+              $70
+            </p>
+            <p class='productText'>
+              125-hr protection<br>
+              fully waterproof<br>
+              island waterfall scent<br>
+              72oz
+            </p>
+            <button class='buy'>purchase</button>
+          </div>
+        </div>        
+      </div>
+    </article>
+  </section>
+  
+  <section id='media'>
+    <div class='overlay'>
+      <h1 class='imgOverlayText' style='font-family: Yellowtail; font-size: 2rem; margin-bottom: 0.1rem;'>Go For A Swim</h1>
+      <h2 class='imgOverlayText' style='font-family: Righteous; font-size: 1.25rem; margin-top: 0.1rem;'>and enjoy the sun again</h2>
+    </div>
+    
+    <article class='articleWrap' style='flex-direction: column; text-align: center;'>
+      <article class='articleWrap' style='flex-direction: column;'>
+      <div class='article' style='font-size: 1.25rem; padding-top:1.5rem;'> 
+        Sign up for our personalized newsletter
+      </div>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id='email' name='email' type='email' placeholder='Enter your email' required></input>
+        <input id='submit' type='submit' class='buy' style='margin: auto; margin-top: 1rem; font-size: 1rem; width: 5rem;'></input>
+      </form>  
+      <div class='article' style='font-size: 1.25rem; padding-top:1rem; margin-top: 1rem;'> 
+        And don't forget to watch our new TV spot 
+      </div>
+      <div style='margin-top: 1rem;'>
+        <iframe id='video' class='video' src="https://www.youtube.com/embed/SCTSCAQzY9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <div class='videoReplace'>
+          <a href='https://www.youtube.com/watch?v=8oJzfmWO3CU'>Watch it here.</a>
+        </div>
+      </div>
+    </article>
+  </section>
+  
+  <footer id='footer'>
+    <div class='flexColumn'>
+      <div class='flexRow' style='justify-content: flex-end; bottom: 0;'>
+        <ul class='nav-form' style='font-size: 1rem;'>
+          <li> <a class='nav-link' href='#'> privacy </a> </li>
+          <li> <a class='nav-link' href='#'> terms </a> </li>
+          <li> <a class='nav-link' href='#'> contact </a> </li>
+        </ul>
+      </div>
+      <div style='font-size: 0.8rem; top: 0; width: 100%; display: flex; justify-content: flex-end; background-color: #d9f9fc'>
+        <p style='margin-right: 1rem;'> Copyright 2043, Omni Consumer Chemicals. All rights reserved. </p>
+      </div>
+    </div>
+  </footer>
+</main>
+<!-- partial -->
+  
+</body>
+</html>
