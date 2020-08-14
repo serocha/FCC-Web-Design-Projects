@@ -1,0 +1,69 @@
+function checkCashRegister(price, cash, cid) {
+  let ref = [0.01, 0.05, 0.1, 0.25, 1, 5, 10, 20, 100];
+  let change = [];
+  let remain = cash-price;
+
+  /* 
+    Add currency reference values to the end of 
+    cash in drawer for filtering purposes
+  */
+  for (let i = 0; i < cid.length; i++) {
+    cid[i][2] = ref[i];
+  };
+
+  /*
+    Determine available change. Filter
+    denominations smaller or equal to the change due.
+    Sum the total change available in those
+    denominations. 
+
+    Note that the sum is multiplied to an integer
+    before rounding to avoid weirdness, then returned
+    to 2 decimals.
+  */
+  let availChange = Math.round(cid
+    .filter( (arr) => arr[2] <= remain)
+    .map( (arr) => arr[1])
+    .reduce( (a,b) => a+b)
+  *100)/100;
+
+  if (availChange < remain) {
+
+    return {status: 'INSUFFICIENT_FUNDS', change: []};
+
+  } else if (availChange === remain) {
+
+    /* Remove denomination values so FCC doesn't
+     complain about the returned array later. */
+    cid.forEach( (arr) => arr.pop());
+    return {status: 'CLOSED', change: cid};
+
+  } else {
+
+      cid
+        .reverse()
+        .forEach(
+          function (arr) {
+
+            if (arr[2] <= remain) {
+              let newArr = [];
+              let amt = 0;
+              newArr.push(arr[0]);
+
+              while (arr[2] <= remain && arr[1] > 0) {
+                amt += arr[2];
+                arr[1] -= arr[2];
+                remain -= arr[2]; //floating point error here
+                remain = Math.round(remain*100)/100
+              }
+              newArr.push(amt);         
+              change.push(newArr);
+            }
+          }
+        );
+
+  return {status: 'OPEN', change: change}
+  }
+}
+
+checkCashRegister(3.26, 100, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
