@@ -1,0 +1,22 @@
+/*
+  Checks if a string is in a standard US phone format. 
+  (1) (555)-555-5555
+  Requires area code.
+  Country calling code optional, but must be in zone 1. 
+*/
+
+function telephoneCheck(str) {
+
+  let par = /^1?\s?\(\d{3}\)-?\s?\d{3}-?\d{4}$/;
+  let noPar = /^1?\s?\d{3}-?\s?\d{3}-?\s?\d{4}$/;
+
+  console.log(str.match(par))
+  console.log(str.match(noPar))
+
+  if (par.test(str) || noPar.test(str)) {
+    return true;
+  } else {
+    return false;
+  }
+
+}
