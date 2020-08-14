@@ -1,0 +1,19 @@
+//Basic Caesar cipher decoder, using a ROT-13 tranformation.
+
+function rot13(str) {
+  let alph = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ']
+  let key = [...'NOPQRSTUVWXYZABCDEFGHIJKLM'];
+  let decode = [];
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i].match(/[A-Z]/)) {
+      decode.push(key[alph.indexOf(str[i])]);
+    } else {
+      decode.push(str[i]);
+    }
+  }
+
+  console.log(decode.join(''))
+
+  return decode.join('');
+}
