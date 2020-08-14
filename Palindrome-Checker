@@ -1,0 +1,19 @@
+//Check if a string is a palindrome, using only alphanumeric characters
+
+function palindrome(str) {
+  let test = str.toLowerCase().match(/[A-Za-z0-9]/gi);
+  let len = Math.floor(test.length/2);
+  let first = [];
+  let last = [];
+  
+  for (let i = 0; i < len; i++) {
+    first.push(test.shift());
+    last.push(test.pop());
+  };
+
+  if (first.join('') == last.join('')) {
+    return true;
+  } else {
+    return false;
+  }
+}
