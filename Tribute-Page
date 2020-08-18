@@ -7,6 +7,112 @@
 
 </head>
 <body>
+
+<style>
+body {
+  font-family: 'Noto Sans';
+  text-align: center;
+  background: #F1E9E7;
+  color: #2F2D2C ;
+  width: 100%;
+}
+
+h1 {
+  background-color: #e6dedc;
+  margin: auto;
+  padding: 1rem 0 1rem 0;
+  border-radius: 2%;
+  box-shadow: -3px 3px 5px 4px rgba(0,0,0,0.1);
+  height: 60px;
+}
+
+p {
+  margin: auto;
+}
+
+#quoteDisplay {
+  font-style: italic;
+  text-align: center;
+  width: 50%;
+  height: 7rem;
+  margin: auto;
+  opacity: 1;
+  animation-name: fade;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+  
+@keyframes fade {
+  0% {opacity:0;}
+  10% {opacity:1;}
+}
+  
+img {
+  box-shadow: -5px 5px 5px 4px rgba(0,0,0,0.25)
+}
+  
+   /* The image classes can be simplified into a pseudo-class that inherits but changes resolution for each. 
+      However, for this project I am required to have a specific name so I found this easier. */
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  border-radius: 2%;
+  max-width: 100%;
+  height: auto;
+  width: 720px;
+}
+ 
+#img2 {
+  height: 540px;
+}
+  
+#img3 {
+    height: 400px;
+}
+  
+#img4 {
+    height: 454px;
+    width: 840px;
+}
+  
+#img5 {
+    height: 1055px;
+    width: 800px;
+}
+  
+#img-div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: #e6dedc;
+  border-radius: 2%;
+  margin: 5px;
+  box-shadow: -3px 3px 5px 4px rgba(0,0,0,0.1)
+}
+  
+#img-caption {
+  text-align: center;
+  z-index: 2;
+  margin: auto;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-size: 0.75rem;
+  background-color: #F1E9E7;
+  width: 50%;
+  box-shadow: -3px 3px 4px 3px rgba(0,0,0,0.2)
+}
+
+#tribute-info {
+  text-align: left;
+  line-height: 2rem;
+  margin: auto;
+  padding: 2rem 0 2rem 0;
+  width: 50%;
+}
+</style>
+
 <!-- partial:index.partial.html -->
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
